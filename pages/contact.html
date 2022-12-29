@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <title>Pesto-Contact</title>
+
+</head>
+<body>
+
+    <header id="contactHeader" >
+        <nav id="nav" class="navbar navbar-expand-lg bg-dark p-4 py-3 fixed-top  ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="../imgs/logo-default1-140x57.png" ></a>
+              <button class="navbar-toggler border-white " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white "></span>
+              </button>
+              <div class="collapse navbar-collapse  " id="navbarNav">
+                <ul class="navbar-nav text-white m-auto px-5 fs-4 fw-bold d-flex justify-content-around">
+                  <li class="nav-item">
+                    <a class="nav-link active home-link " aria-current="page" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="about.html">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">TYPOGRAPHY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="contact.html">CONTACTS</a>
+                  </li>
+
+
+                </ul>
+                <div>
+                    <button class=" btn btn-light rounded-0 p-3 fw-bold mx-4">Book Now</button>
+                </div>
+                <div>
+                  <button id="OutBtn" class=" btn btn-success rounded-0 p-3 fw-bold"> Log Out </button>
+              </div>
+              </div>
+            </div>
+        </nav>
+        <div class="home-caption ">
+            <div class="p-5 p-sm-0 w-575 position-absolute start-50 top-50 translate-middle text-center text-white">
+                <h1 class="fs-1 fw-bold my-3">Contacts <span id="homeWelcome"></span></h1>
+                <p class="fs-4 fw-bold my-5">
+                     <a id="homeHeadLin" href="home.html" class=" text-white text-decoration-none"> Home</a>
+                     <a href="" class=" text-white text-decoration-none opacity-75 disabled mx-3"> Contacts</a>
+                </p>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!--------------------------------------------Address Info------------------------------>
+
+    <section id="addressinfo">
+
+        <div class="container p-5 my-3">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="addItem p-3   text-center">
+                        <div class="addIcon py-2 my-2">
+                            <i class="fa-solid fa-phone overTriangle"></i>
+                        </div>
+                        <a href="#" class="fs-1 text-decoration-none text-dark">1-800-123-1234</a>
+                        <p > You can call us anytime </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="addItem p-3 itemCircle text-center">
+                        <div class="addIcon py-2 my-2 ">
+                            <i class="fa-regular fa-map overCircle"></i>
+                        </div>
+                        <a href="#" class="fs-1 text-decoration-none text-dark">
+                             51 Francis Street, San Diego, CA 91702 United States
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="addItem p-3  itemSquare text-center">
+                        <div class="addIcon py-2 my-2">
+                            <i class="fa-regular fa-paper-plane overSquare"></i>
+                        </div>
+                        <a href="#" class="fs-1 text-decoration-none text-dark">info@demolink.org</a>
+                        <p> Feel free to email us your questions </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------------------------Maps------------------------------>
+
+    <section id="maps" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d558670.720145669!2d-116.84369635076877!3d32.80684003685023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2z2LPYp9mGINiv2YrZiti62YjYjCDZg9in2YTZitmB2YjYsdmG2YrYp9iMINin2YTZiNmE2KfZitin2Kog2KfZhNmF2KrYrdiv2Kk!5e0!3m2!1sar!2seg!4v1665864999584!5m2!1sar!2seg" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!--------------------------------------------Contact------------------------------>
+
+    <section id="contact" class=" bg-light p-5">
+
+        <div class="container">
+
+            <div class="row text-center ">
+                <h2 class="fw-bold"> Get in Touch</h2>
+
+                <div class="contactForm w-75 m-auto p-2 my-2">
+
+                    <div class="mb-3 ">
+                        <input type="text" class="form-control p-3  " required id="userNameIn" placeholder="Your Name...">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control p-3 " id="userEmailIn" placeholder="Your Email....">
+                    </div>      
+                    <div class="mb-3">
+                        <input type="text" class="form-control p-3 " id="userPhoneIn" placeholder="Your Phone...">
+                        <p id="phoneval" class="text-danger float-start d-none"> phone ex: (011|012|010|015) 2222 2222</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <textarea  rows="8 " class="form-control p-3 " id="userMesgIn" placeholder='Write Your Message here...' ></textarea> 
+                        <p id="Messgval" class="text-danger float-start d-none"> your message should be more than 5 chars</p>
+
+                    </div>
+                    <div class="mb-3">
+
+                        <button id="MesgBtn" class="btn text-white border-0 rounded-0 fs-4 p-2 px-5">SEND</button>
+
+                    </div>
+
+
+                </div> 
+                
+                <div id="thank" class=" p-3 text-success bg-light fs-1 d-none">
+                <p>
+                    Thanks for contacting Us 
+                </p>
+            </div>
+                                  
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer id="footer" class="bg-dark p-5">
+        <div class="container p-5 d-flex justify-content-center flex-column">
+          <img src="../imgs/logo-default1-140x57.png"  >
+          <div class="footer-links mx-auto w-50  d-flex justify-content-around flex-row flex-md-row flex-sm-column 
+            my-5 ">
+            <p class="fs-5 text-white text-uppercase mx-4 text-sm-center"> menu</p>
+            <p class="fs-5 text-white text-uppercase mx-4 text-sm-center"> blog</p>
+            <p class="fs-5 text-white text-uppercase mx-4 text-sm-center"> CONTACTS</p>
+            <p class="fs-5 text-white text-uppercase mx-4 text-sm-center"> gallery</p>
+            <p class="fs-5 text-white text-uppercase mx-4 text-sm-center"> about</p>
+          </div>
+          <div class="footer-icons mx-auto w-50  d-flex justify-content-around flex-row my-2  mb-5">
+            <i class="fa-brands fa-facebook-f fs-4 mx-sm-3"></i>
+            <i class="fa-brands fa-instagram fs-4 mx-sm-3"></i>
+            <i class="fa-brands fa-twitter fs-4 mx-sm-3"></i>
+            <i class="fa-brands fa-youtube fs-4 mx-sm-3"></i>
+            <i class="fa-brands fa-pinterest fs-4 mx-sm-3"></i>
+          
+          </div>
+          <div class="text-center">
+            <p class="text-capitalize fs-6 text-white  my-5">
+              ©  2022 Pesto. All Rights Reserved. Privacy Policy. Design by
+              <span> Templatemonster</span> 
+            </p>
+  
+          </div>
+        </div>
+  
+      </footer>
+
+
+    
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

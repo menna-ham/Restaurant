@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <title>SignUp-page</title>
+</head>
+<body class="m-0">
+
+    <div class="container-fluid  ">
+      <div class="row  p-0 ">
+
+        <div class="col-lg-6 col-md-6 col-sm-12  m-0 p-0">
+
+          <div class="sign_box d-flex justify-content-center align-items-center">
+
+            <div class="login-box  w-75">
+              <h1 class="text-success fw-bold text-start"> Signup </h1>
+              <form >
+                  <div class="my-4 border-white">
+                      <input type="text" id="signName" class="form-control " id="exampleFormControlInput1" placeholder="Enter Your Name">
+                      <p class="text-danger d-none" id="signNameVal"> your name should start with capital and more than 4 chars</p>
+                    </div>
+                    <div class="my-4">
+                      <input type="email" id="signEmail" class="form-control  " id="exampleFormControlInput1" placeholder="Enter Your Email">
+                      <p class="text-danger d-none" id="signEmailVal">your email should be in form 'example@example.com'</p>
+                      <p class="text-danger d-none" id="mailChecker"> this email already exist try another email</p>
+
+                    </div>
+                    <div class="my-4">
+                      <input type="password" id="signPass" class="form-control " id="exampleFormControlInput1" placeholder="Enter Your Password">
+                      <p class="text-danger d-none" id="signPassVal"> your password should be [8-10] chars and contains atleast uppercase letter , special char , lowercase and number </p>                          
+                    </div>
+                    <div class="my-4">
+                      <div id="signBtn"   class="form-control text-white bg-success btn border-0 "  >Sign Up</div>
+                      <p id="success-sign" class="text-white d-none text-center text-success"> you've signed up successfully </p>
+                    </div> 
+                    
+                    <div class="my-4">
+                      <p class=" text-white text-center">You have an account? <a class="text-white text-decoration-none" id="loginLink" href="../index.html">Login </a></p> 
+                    </div>
+
+              </form>
+          </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-6  col-md-6  p-0 m-0">
+          <div class="sign_Img">
+            
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+</body>
+    
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="../js/signUp.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Login-page</title>
+</head>
+<body >
+
+        <div class="container-fluid LoginBody position-relative">
+
+          <div class="row m-0 position-absolute d-flex justify-content-center align-items-center">
+
+            <div class="col-md-5 ">
+
+            <div class="loginBox shadow p-5 rounded-5">
+
+              <h1 class="text-success fw-bold text-center"> Login </h1>
+
+              <form >
+
+                <div class="my-4 border-white">
+                    <input type="email" class="form-control  " id="loginEmail" placeholder="Enter Your Email">
+                    <p class="text-danger d-none" id="loginNameVal"> This Email is Not found in Our Site </p>
+                  </div>
+                  <div class="my-4">
+                    <input type="password" class="form-control " id="loginPass" placeholder="Enter Your Password">
+                  </div>
+                  <p class="text-danger d-none" id="loginPassVal"> Password or Email is not correct .. try again </p>
+                  <div class="my-4">
+                    <div  id="LoginBtn" class="form-control btn border-0 text-white bg-success" >Login</div>
+                  </div>
+                  <div class="my-4">
+                    <p class=" text-white text-center">Don't have an account? <a class="text-white text-decoration-none" id="signUpLink" href="./pages/signup.html"> Signup</a></p> 
+                  </div>
+
+            </form>
+
+            </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+    <!-- </div> -->
+    
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

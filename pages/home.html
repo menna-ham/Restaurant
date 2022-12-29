@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <title>Pesto</title>
+</head>
+<body>
+<!--------------------------------------------------------Header ----------------------------------------->
+    <header >
+        <nav id="nav" class="navbar navbar-expand-lg bg-dark p-4 py-3 fixed-top  ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="../imgs/logo-default1-140x57.png" ></a>
+              <button class="navbar-toggler border-white " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar navbar-toggler-icon text-white"></span>
+              </button>
+              <div class="collapse navbar-collapse  " id="navbarNav">
+                <ul class="navbar-nav text-white m-auto px-5 fs-4 fw-bold d-flex justify-content-around">
+                  <li class="nav-item">
+                    <a class="nav-link active home-link " aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="about.html">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">TYPOGRAPHY</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="contact.html">CONTACTS</a>
+                  </li>
+                </ul>
+
+                <div class="ms-5 d-flex flex-row ">
+                  <div>
+                    <button class=" btn btn-light rounded-0 p-3 fw-bold me-2  my-3">Book Now</button>
+                  </div>
+                  <div>
+                    <button id="OutBtn" class=" btn btn-success rounded-0 p-3 my-3 ms-2 fw-bold"> Log Out </button>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+        </nav>
+        <div class="home-caption ">
+            <div class="p-5 p-sm-0 w-575 position-absolute start-50 top-50 translate-middle text-center text-white">
+                <h1 class="fs-1 fw-bold my-3">WELCOME <span id="homeWelcome"></span></h1>
+                <p class="fs-4 fw-bold my-5">Our restaurant offers full-service dining with breathtaking views seen from our indoor covered patio and our outdoor sundeck.</p>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!----------------------------- form-book ---------------------------->
+    <section id="form-book " class=" p-1 bg-light ">
+      <div class="container  my-5" >
+
+        <div class="row  g-2">
+
+          <div class="col-lg-10 col-md-10  mx-auto">
+            <div class="book-form mx-auto bg-white rounded-2 shadow p-5 p-md-3 d-flex flex-row flex-wrap justify-content-between  ">
+                        
+              <div class="col-lg-2 col-md-6 col-sm-12">
+                <div class="book-item bg-white text-uppercase p-2">
+                  <h4>Name</h4>
+                  <input type="text" required class=" rounded-1 border-0 w-100 fs-4 text-black mt-sm-0 mt-md-0 my-2" placeholder="Your name">
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-12">
+                <div class="book-item bg-white text-uppercase p-2">
+                  <h4>phone</h4>
+                  <input type="text" required class=" rounded-1 border-0 w-100 my-2 mt-md-0 mt-sm-0 fs-4  text-black " placeholder="Your phone number">
+                </div>
+              </div>     
+              <div class="col-lg-2 col-md-6 col-sm-12">
+                <div class="book-item bg-white text-uppercase p-2">
+                  <h4>date</h4>
+                  <input type="date" class="rounded-1 border-0 w-100 my-2 mt-md-0 mt-sm-0 fs-4 text-black " placeholder="27/9/22">
+
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-12">
+                <div class="book-item bg-white text-uppercase p-2">
+
+                  <h4>No. people</h4>
+                  <select name="No. people"  class=" rounded-1 border-0 w-100 mt-md-0 mt-sm-0 my-2 p-1 fs-4">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-12">
+                <div class="book-item bg-white text-uppercase p-2">
+                  <button class="btn btn-dark text-uppercase p-3 rounded-1 w-100 mt-md-0 mt-sm-0 my-2 border-0">check availability</button>
+                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+    <!----------------------------- about ---------------------------->
+
+    <section id="about" class="bg-light pt-5">
+        <div class="container ">
+            <div class="row mt-5">
+                <div class="col-lg-6 my-5">
+                    <div class="about-img text-center text-md-start">
+                        <div class="overlay-parent position-relative">
+                            <img src="../imgs/home-3-1-483x327.jpg" class="rounded-3 img-fluid " >
+                            <div class=" overlay-about position-absolute bottom-0 start-0 end-0 ">
+                                <img src="../imgs/home-3-2-341x391.png" class="img-fluid" >
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-6 my-5">
+                    <div class="about-caption px-5 ms-md-1 px-md-1">
+
+                        <h2 class="fs-1 fw-bold mb-4">About Me</h2>
+                        <p class="fs-5 mb-2">Pesto is a family owned and operated Italian Restaurant offering a combination of fresh ingredients and authentic Italian cooking.</p>
+                        <p class="fs-5 mb-2">We will make sure you are served the most authentic and fresh Italian dishes, while offering the best customer service. Our kitchen is committed to providing our guests with the best Italian Cuisine.</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <scetion id="featured-offers " class="p-5">
+        <div class="container">
+            <div class="row" >
+                <div class="featured-text m-auto text-center pt-5">
+                    <h2 class="fs-1 fw-bold mb-3">Featured Offers</h2>
+                    <p class="fs-5 mb-3">We offer a great variety of the best Italian dishes to our visitors and guests. Below are some of our most popular main dishes and desserts.</p>
+                </div>
+            </div>
+            <div class="row mt-5 mx-3">
+                <div class="col-lg-4 col-md-6">
+                    <div class="featured-item  ">
+                        <div class="featured-img text-center position-relative">
+                           <img src="../imgs/product-1-370x395.jpg"class='w-100' >
+                           <div class="featured-overlay position-absolute top-0 bottom-0 start-0 end-0 d-flex align-items-center justify-content-center mt-5">
+                            <button class="btn text-white border-0 rounded-0 fs-4 p-2 px-4">order now</button>
+                           </div> 
+                        </div>
+                        <div class="featured-txt text-center pt-3">
+                            <h4 class="fs-3 ">Ravioli</h4>
+                            <p class="fs-3 pb-2">$8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="featured-item  ">
+                        <div class="featured-img text-center position-relative">
+                           <img src="../imgs/product-2-370x395.jpg"class='w-100' >
+                           <div class="featured-overlay position-absolute top-0 bottom-0 start-0 end-0 d-flex align-items-center justify-content-center mt-5">
+                            <button class="btn text-white border-0 rounded-0 fs-4 p-2 px-4">order now</button>
+                           </div> 
+                        </div>
+                        <div class="featured-txt text-center pt-3">
+                            <h4 class="fs-3 ">Black Pasta</h4>
+                            <p class="fs-3 pb-2">$13</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="featured-item  ">
+                        <div class="featured-img text-center position-relative">
+                           <img src="../imgs/product-3-370x395.jpg"class='w-100' >
+                           <div class="featured-overlay position-absolute top-0 bottom-0 start-0 end-0 d-flex align-items-center justify-content-center mt-5">
+                            <button class="btn text-white border-0 rounded-0 fs-4 p-2 px-4">order now</button>
+                           </div> 
+                        </div>
+                        <div class="featured-txt text-center pt-3">
+                            <h4 class="fs-3 ">Gelato</h4>
+                            <p class="fs-3 pb-2">$4</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </scetion>
+
+    <section id="menu" class="bg-light p-5 p-sm-1">
+
+        <h2 class="fs-1 text-center">Our Restaurant Menu</h2>
+
+        <div class="container">
+            <div class="row px-sm-0">
+                <div class="mainMenu my-5 my-sm-3">
+                    <ul class="nav nav-pills  d-flex justify-content-center flex-md-row flex-sm-column  bg-dark text-white py-4 " id="pills-tab" role="tablist">
+                        <li class="nav-item  mx-sm-auto" role="presentation">
+                          <button class="nav-link active fs-4 text-uppercase " id="pills-mains-tab" data-bs-toggle="pill" data-bs-target="#pills-mains" type="button" role="tab" aria-controls="pills-mains" aria-selected="true">mains</button>
+                        </li>
+                        <li class="nav-item mx-sm-auto" role="presentation">
+                          <button class="nav-link fs-4 text-uppercase" id="pills-deserts-tab" data-bs-toggle="pill" data-bs-target="#pills-deserts" type="button" role="tab" aria-controls="pills-deserts" aria-selected="false">deserts</button>
+                        </li>
+                        <li class="nav-item mx-sm-auto" role="presentation">
+                          <button class="nav-link fs-4 text-uppercase" id="pills-drinks-tab" data-bs-toggle="pill" data-bs-target="#pills-drinks" type="button" role="tab" aria-controls="pills-drinks" aria-selected="false">drinks</button>
+                        </li>
+                      </ul>
+
+                      <div class="tab-content bg-white d-flex justify-content-center " id="pills-tabContent">
+                        <div class="tab-pane py-4 w-100   show active" id="pills-mains" role="tabpanel" aria-labelledby="pills-mains-tab" tabindex="0">
+                            <div class="d-flex flex-column">
+                                <div class="col-lg-11 mx-4">
+                                    <div class="menu-item ">
+                                        <div class="card mb-3 border-0" >
+                                            <div class="row g-0">
+                                              <div class="col-lg-4">
+                                                <img src="../imgs/gallery-masonry-1-640x429.jpg" class="img-fluid rounded-start" alt="...">
+                                              </div>
+                                              <div class="col-lg-8">
+                                                <div class="card-body">
+                                                  <h6 class="fs-4"> $25.89</h6>
+                                                  <h5 class="card-title fs-2">Osso Buco</h5>
+                                                  <p class="card-text fs-5">Osso Buco is one of the Italian greats - slow cooked veal in a white wine tomato sauce. Meltingly tender, this is both hearty and luxurious.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-lg-11 mx-4">
+                                    <div class="menu-item ">
+                                        <div class="card mb-3 border-0" >
+                                            <div class="row g-0">
+                                              <div class="col-lg-4">
+                                                <img src="../imgs/gallery-masonry-1-original.jpg" class="img-fluid rounded-start" alt="...">
+                                              </div>
+                                              <div class="col-lg-8">
+                                                <div class="card-body">
+                                                  <h6 class="fs-4"> $16.89</h6>
+                                                  <h5 class="card-title fs-2">Pappardelle Mimmo</h5>
+                                                  <p class="card-text fs-5">This delicious dish tops long, wide pasta with scallops, lobster, asparagus, butter, sage and truffle oil to cater every palate.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    
+                                </div>                    
+                                <div class="col-lg-11 mx-4">
+                                    <div class="menu-item ">
+                                        <div class="card mb-3 border-0" >
+                                            <div class="row g-0">
+                                              <div class="col-lg-4">
+                                                <img src="../imgs/gallery-masonry-2-640x429.jpg" class="img-fluid rounded-start" alt="...">
+                                              </div>
+                                              <div class="col-lg-8">
+                                                <div class="card-body">
+                                                  <h6 class="fs-4"> $17.89</h6>
+                                                  <h5 class="card-title fs-2">Trippa Satriano</h5>
+                                                  <p class="card-text fs-5">Thinly sliced herb encrusted ahi tuna topped with diced tomatoes, olives, capers, red onions and fennel. Perfect choice even for the first-time visitors!</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    
+                                </div>                  
+                               <div class="col-lg-11 mx-4">
+                                    <div class="menu-item ">
+                                        <div class="card mb-3 border-0" >
+                                            <div class="row g-0">
+                                              <div class="col-lg-4">
+                                                <img src="../imgs/gallery-masonry-3-original.jpg" class="img-fluid rounded-start" alt="...">
+                                              </div>
+                                              <div class="col-lg-8">
+                                                <div class="card-body">
+                                                  <h6 class="fs-4"> $18.89</h6>
+                                                  <h5 class="card-title fs-2">Filetto Di Manzo</h5>
+                                                  <p class="card-text fs-5">Wonderful combination of prime tenderloin, winter greens, Jerusalem artichoke puree, and oxtail reduction sauce.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade " id="pills-deserts" role="tabpanel" aria-labelledby="pills-deserts-tab" tabindex="0">
+                        
+                            <div class="d-flex flex-column">
+                                <div class="col-lg-11 mx-4">
+                                    <div class="menu-item ">
+                                        <div class="card mb-3 border-0" >
+                                            <div class="row g-0">
+                                              <div class="col-lg-4">
+                                                <img src="../imgs/gallery-masonry-3-original.jpg" class="img-fluid rounded-start" alt="...">
+                                              </div>
+                                              <div class="col-lg-8">
+                                                <div class="card-body">
+                                                  <h6 class="fs-4"> $20.89</h6>
+                                                  <h5 class="card-title fs-2">Tiramisu</h5>
+                                                  <p class="card-text fs-5">A Pesto’s favorite - classic Italian dessert made with lady fingers, Mascarpone cheese & espresso. Perfect for both kids and adults.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-lg-11 mx-4">
+                                    <div class="menu-item ">
+                                        <div class="card mb-3 border-0" >
+                                            <div class="row g-0">
+                                              <div class="col-lg-4">
+                                                <img src="../imgs/gallery-masonry-4-960x429.jpg" class="img-fluid rounded-start" alt="...">
+                                              </div>
+                                              <div class="col-lg-8">
+                                                <div class="card-body">
+                                                  <h6 class="fs-4"> $6.89</h6>
+                                                  <h5 class="card-title fs-2">Cannoli</h5>
+                                                  <p class="card-text fs-5">Trio tower of cannoli filled with mdooth ricotta, sugar & cinnamon, with chocolate & raspberry sauces. Single cannoli is also available.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    
+                                </div>                    
+                                <div class="col-lg-11 mx-4">
+                                    <div class="menu-item ">
+                                        <div class="card mb-3 border-0" >
+                                            <div class="row g-0">
+                                              <div class="col-lg-4">
+                                                <img src="../imgs/gallery-masonry-5-960x429.jpg" class="img-fluid rounded-start" alt="...">
+                                              </div>
+                                              <div class="col-lg-8">
+                                                <div class="card-body">
+                                                  <h6 class="fs-4"> $5.89</h6>
+                                                  <h5 class="card-title fs-2">Pistachio Passion</h5>
+                                                  <p class="card-text fs-5">Layered pistachio cream, cream cheese custard & whipped cream atop a rich walnut crust.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    
+                                </div>                  
+                               <div class="col-lg-11 mx-4">
+                                    <div class="menu-item ">
+                                        <div class="card mb-3 border-0" >
+                                            <div class="row g-0">
+                                              <div class="col-lg-4">
+                                                <img src="../imgs/gallery-masonry-3-original.jpg" class="img-fluid rounded-start" alt="...">
+                                              </div>
+                                              <div class="col-lg-8">
+                                                <div class="card-body">
+                                                  <h6 class="fs-4"> $4.89</h6>
+                                                  <h5 class="card-title fs-2">Chocolate-and-Pistachio Biscotti</h5>
+                                                  <p class="card-text fs-5">At Pesto, we vary these wonderful nutty biscotti, while also dipping them in melted dark chocolate for an extra layer of flavor.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-drinks" role="tabpanel" aria-labelledby="pills-drinks-tab" tabindex="0">
+                            3...
+                            <div class="d-flex flex-column">
+                                <div class="col-lg-11 mx-4">
+                                    <div class="menu-item ">
+                                        <div class="card mb-3 border-0" >
+                                            <div class="row g-0">
+                                              <div class="col-lg-4">
+                                                <img src="../imgs/product-1-370x395.jpg" class="img-fluid rounded-start" alt="...">
+                                              </div>
+                                              <div class="col-lg-8">
+                                                <div class="card-body">
+                                                  <h6 class="fs-4"> $10.89</h6>
+                                                  <h5 class="card-title fs-2">Aperol Spritz</h5>
+                                                  <p class="card-text fs-5">The most popular drink in Venice: refreshing, easygoing &…happy! Perfect to be sipped as an “Aperitivo” just before dinner - delightful!</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-lg-11 mx-4">
+                                    <div class="menu-item ">
+                                        <div class="card mb-3 border-0" >
+                                            <div class="row g-0">
+                                              <div class="col-lg-4">
+                                                <img src="../imgs/product-2-370x395.jpg" class="img-fluid rounded-start" alt="...">
+                                              </div>
+                                              <div class="col-lg-8">
+                                                <div class="card-body">
+                                                  <h6 class="fs-4"> $9.89</h6>
+                                                  <h5 class="card-title fs-2">Negroni</h5>
+                                                  <p class="card-text fs-5">Reward yourself with a moment of relaxation & pure pleasure while enjoying the full flavour & simplicity of a Negroni, an iconic Italian cocktail.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    
+                                </div>                    
+                                <div class="col-lg-11 mx-4">
+                                    <div class="menu-item ">
+                                        <div class="card mb-3 border-0" >
+                                            <div class="row g-0">
+                                              <div class="col-lg-4">
+                                                <img src="../imgs/product-3-370x395.jpg" class="img-fluid rounded-start" alt="...">
+                                              </div>
+                                              <div class="col-lg-8">
+                                                <div class="card-body">
+                                                  <h6 class="fs-4"> $11.89</h6>
+                                                  <h5 class="card-title fs-2">Pistachio Passion</h5>
+                                                  <p class="card-text fs-5">A cocktail for those who prefer more delicate flavours but nonetheless want a drink full of taste & personality.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    
+                                </div>                  
+                               <div class="col-lg-11 mx-4">
+                                    <div class="menu-item ">
+                                        <div class="card mb-3 border-0" >
+                                            <div class="row g-0">
+                                              <div class="col-lg-4">
+                                                <img src="../imgs/product-2-370x395.jpg" class="img-fluid rounded-start" alt="...">
+                                              </div>
+                                              <div class="col-lg-8">
+                                                <div class="card-body">
+                                                  <h6 class="fs-4"> $8.89</h6>
+                                                  <h5 class="card-title fs-2">White Peach Bellini</h5>
+                                                  <p class="card-text fs-5">White Peach Bellini is a classic drink from Venice Italy of white peach purée and Prosecco. It is one of our most popular drinks at Pesto.</p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        
+                        </div>
+                      </div>
+                      
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="zoom-pics" class="position-relative">
+        <div class="container-fluid bg-dark ">
+            <div class="row g-0 m-0">
+                <div class="zoom-item col-lg-4 col-md-4 col-sm-12 mx-0 position-relative">
+                        <img src="../imgs/gallery-masonry-1-640x429.jpg" class=" img-fluid" >
+                        <div class="zoom-icon d-flex justify-content-center  align-items-center text-center">
+                                <p class="fw-bold fs-5 m-auto">ZOOM</p>
+                        </div>
+                </div>
+                <div class="zoom-item col-lg-4 col-md-4 col-sm-12 mx-0 position-relative  ">
+                  <img src="../imgs/gallery-masonry-2-640x429.jpg" class="ms-0 img-fluid " >
+                  <div class="zoom-icon d-flex justify-content-center  align-items-center text-center">
+                          <p class="fw-bold fs-5 m-auto">ZOOM</p>
+                  </div>
+                </div>
+                <div class="zoom-item col-lg-4 col-md-4 mx-0 position-relative  ">
+                  <img src="../imgs/gallery-masonry-3-original.jpg" class="ms-0 img-fluid " >
+                  <div class="zoom-icon d-flex justify-content-center  align-items-center text-center">
+                          <p class="fw-bold fs-5 m-auto">ZOOM</p>
+                  </div>
+                </div>
+                <div class="zoom-item col-lg-6 col-md-6 mx-0 position-relative  ">
+                  <img src="../imgs/gallery-masonry-4-960x429.jpg" class="ms-0 img-fluid " >
+                  <div class="zoom-icon d-flex justify-content-center  align-items-center text-center">
+                          <p class="fw-bold fs-5 m-auto">ZOOM</p>
+                  </div>
+                </div>         
+                 <div class="zoom-item col-lg-6 col-md-6 mx-0 position-relative  ">
+                  <img src="../imgs/gallery-masonry-5-960x429.jpg" class="ms-0 img-fluid " >
+                  <div class="zoom-icon d-flex justify-content-center  align-items-center text-center">
+                          <p class="fw-bold fs-5 m-auto">ZOOM</p>
+                  </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class=" sliderBox position-absolute d-none d-flex justify-content-between align-items-center">
+          <i id="PrevBtn" class="fa-solid fa-circle-arrow-left"></i>
+          <i id="closeBtn" class=" fa-solid fa-circle-xmark position-absolute end-0 top-0"></i>
+
+          <div class="item-slide  m-5">
+          </div>
+          <i id="nextBtn" class="fa-solid fa-circle-arrow-right"></i>
+
+        </div>
+    </section>
+
+
+    <!-- Owl Carousl -->
+    <section id="slider" class="px-2 py-5">
+      <h2 class="text-center fw-bold"> Recent News </h2>
+      <div class="container ">
+        <div class="row  ">
+
+          <div class="owl-carousel">
+
+
+              <div class="news-item ">
+                <div class="new-date text-white bg-dark  text-center fw-bold p-2 rounded-2 my-2">
+                   <p class="m-0">11 JUL 02,2019</p>
+                </div>
+                <div class="new-info">
+                <h3><a class="text-decoration-none text-dark my-2">Genuine Italian Pizza: Authenticity and Choice</a></h3> 
+                  <p class="fs-5 "> As an Italian restaurant, we are very proud of our delicious authentic pizzas. Our three most popular choices are the Rustica, the Toscana and...</p>
+                  <p class=" read fs-4"> READ MORE <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+              </div>
+
+              <div class="news-item ">
+                <div class="new-date text-white bg-dark  text-center fw-bold p-2 rounded-2 my-2">
+                   <p class="m-0">11 JUL 02,2019</p>
+                </div>
+                <div class="new-info">
+                <h3><a class="text-decoration-none text-dark my-2">Genuine Italian Pizza: Authenticity and Choice</a></h3> 
+                  <p class="fs-5 "> As an Italian restaurant, we are very proud of our delicious authentic pizzas. Our three most popular choices are the Rustica, the Toscana and...</p>
+                  <p class=" read fs-4"> READ MORE <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+              </div>
+
+              <div class="news-item ">
+                <div class="new-date text-white bg-dark  text-center fw-bold p-2 rounded-2 my-2">
+                   <p class="m-0">11 JUL 02,2019</p>
+                </div>
+                <div class="new-info">
+                <h3><a class="text-decoration-none text-dark my-2">Genuine Italian Pizza: Authenticity and Choice</a></h3> 
+                  <p class="fs-5 "> As an Italian restaurant, we are very proud of our delicious authentic pizzas. Our three most popular choices are the Rustica, the Toscana and...</p>
+                  <p class=" read fs-4"> READ MORE <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+              </div>
+
+              <div class="news-item ">
+                <div class="new-date text-white bg-dark  text-center fw-bold p-2 rounded-2 my-2">
+                   <p class="m-0">11 JUL 02,2019</p>
+                </div>
+                <div class="new-info">
+                <h3><a class="text-decoration-none text-dark my-2">Genuine Italian Pizza: Authenticity and Choice</a></h3> 
+                  <p class="fs-5 "> As an Italian restaurant, we are very proud of our delicious authentic pizzas. Our three most popular choices are the Rustica, the Toscana and...</p>
+                  <p class=" read fs-4"> READ MORE <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+              </div>
+            <!-- </div> -->
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+
+    <footer id="footer" class="bg-dark p-5">
+      <div class="container p-5 d-flex justify-content-center flex-column">
+        <img src="../imgs/logo-default1-140x57.png"  >
+        <div class="footer-links mx-auto w-50  d-flex justify-content-around flex-row flex-md-row flex-sm-column 
+          my-5 ">
+          <p class="fs-5 text-white text-uppercase mx-4 text-sm-center"> menu</p>
+          <p class="fs-5 text-white text-uppercase mx-4 text-sm-center"> blog</p>
+          <p class="fs-5 text-white text-uppercase mx-4 text-sm-center"> CONTACTS</p>
+          <p class="fs-5 text-white text-uppercase mx-4 text-sm-center"> gallery</p>
+          <p class="fs-5 text-white text-uppercase mx-4 text-sm-center"> about</p>
+        </div>
+        <div class="footer-icons mx-auto w-50  d-flex justify-content-around flex-row my-2  mb-5">
+          <i class="fa-brands fa-facebook-f fs-4 mx-sm-3"></i>
+          <i class="fa-brands fa-instagram fs-4 mx-sm-3"></i>
+          <i class="fa-brands fa-twitter fs-4 mx-sm-3"></i>
+          <i class="fa-brands fa-youtube fs-4 mx-sm-3"></i>
+          <i class="fa-brands fa-pinterest fs-4 mx-sm-3"></i>
+        
+        </div>
+        <div class="text-center">
+          <p class="text-capitalize fs-6 text-white  my-5">
+            ©  2022 Pesto. All Rights Reserved. Privacy Policy. Design by
+            <span> Templatemonster</span> 
+          </p>
+
+        </div>
+      </div>
+
+    </footer>
+
+    
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+    <script>
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        margin: 10,
+        loop: true,
+        autoplay:true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      })
+
+    </script>
+</body>
+</html>

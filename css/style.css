@@ -1,0 +1,78 @@
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Patrick Hand', cursive;
+
+}
+
+.LoginBody{
+  background-image: url(../imgs/gallery-masonry-1-640x429.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  
+}
+.LoginBody .row{
+  background-color: rgba(0, 0, 0,.5);
+  inset: 0;
+}
+.loginBox{
+  background-color: rgba(0, 0, 0,.7) !important;
+}
+
+#LoginBtn:hover{
+  background-color: black !important;
+  cursor: pointer;
+  
+}
+#signUpLink:hover{
+color:#198754 !important;
+}
+
+.sign_Img{
+  background-image: url(../imgs/gallery-masonry-3-original.jpg);
+  background-size: 100% 100%;
+  height: 100vh;
+}
+.sign_box {
+  height: 100vh;
+  background-color: rgba(0, 0, 0,.9);
+}
+#signBtn:hover{
+  background-color: black !important;
+
+}
+
+#loginLink:hover{
+  color:#198754 !important;
+
+}
+
+
+/************************************/
+/***********BUUUUGGGGGGGGGGG***************/
+
+@media (max-width: 800px) {
+  .sign_box {
+    width: 100% !important;
+    background-image: url(../imgs/gallery-masonry-3-original.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+  }
+  .login-box {
+    width: 100%;
+    background-color: rgba(0, 0, 0,.9);
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  .sign_Img{
+    display: none;
+  }
+  
+}
+
+
