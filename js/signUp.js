@@ -143,14 +143,14 @@ function disabledChecker(){
         successSign.classList.add('d-block');
         window.location.href='../index.html';
 
-        alert('true from disabled');
+        // alert('true from disabled');
 
 
     }else{
 
         console.log('setting disabled');
         //signBtn.setAttribute('disabled');
-        alert('false from disabled');
+        alert('Please Try Again');
         //signBtn.classList.add('disabled');
     }
 }

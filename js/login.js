@@ -82,28 +82,43 @@ if (LoginBtn)
 
 console.log(JSON.parse( sessionStorage.getItem('UserInfo')));
 var UserInfo= JSON.parse( sessionStorage.getItem('UserInfo'));
-var userName
+console.log(UserInfo);
+var userName;
 
 if(UserInfo!=null)
 {
     userName=UserInfo.name;
 }
 
+// var pass = loginPass.value;
+console.log(pass);
+
 
 function samePass(){
+    let pass = document.getElementById('loginPass')
+var UserInfo= JSON.parse( sessionStorage.getItem('UserInfo'));
+
     
-    var pass = loginPass.value;
-    if(pass == currentUser.password)
-    {
-        //pages\home.html
-        console.log('password correct')
-        window.location.href= './pages/home.html';
+    var passValue = pass.value;
+    console.log(pass.value);
+    if(passValue){
 
-    }else{
-
-        console.log('password wrong');
-        loginPassVal.classList.remove('d-none');
+        if(passValue == UserInfo.password)
+        {
+            //pages\home.html
+            console.log('password correct')
+            window.location.href= './pages/home.html';
+    
+        }else{
+    
+            console.log('password wrong');
+            loginPassVal.classList.remove('d-none');
+        }
     }
+    else{
+        alert('error')
+    }
+  
 }
 
 if(userName==null){
